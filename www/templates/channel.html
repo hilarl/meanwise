@@ -1,0 +1,228 @@
+<style>
+.slider-slide h3{
+color:#fff;
+margin-top:10px;
+}
+.scroll{
+height:100%;
+}
+ .tabbed-slidebox .tsb-icons:after{
+display:none;
+}
+
+.has-header {
+  top: 100px;
+}
+
+.tabbed-slidebox .tsb-icons .scroll a {
+  font-size: 14px;
+  display: inline;
+  line-height: 1.5px;
+  color: #B0BEC5;
+}
+
+.tabbed-slidebox .tsb-icons .scroll a.active {
+  font-size: 16px;
+  color: #26C6DA;
+  border: none;
+}
+
+.tabbed-slidebox .tsb-icons {
+  margin: 0;
+}
+
+.tsb-hscroll.scroll-view {
+  padding: 15px 0;
+}
+
+.tabbed-slidebox .slider-slide {
+  background: white;
+}
+</style>
+
+<ion-view title="Scrollable Tabbed Slide box">
+  <div style="background: url('http://img.cinemablend.com/cb/1/1/5/4/0/8/a1154086d8a1f5b453bbc9fd840e6910b22e82e9c9ffa848ec1d8d301799fe30c.jpg'); height: 200px;">
+    <ion-header-bar align-title="left" style="background: transparent; border: none;">
+      <div class="buttons">
+        <a nav-transition="ios" href="#/tab/chats" style="border: none; color: white; background: none;" class="button icon-left ion-chevron-left" ></a>
+      </div>
+      <h1 class="title"> </h1>
+      <div class="buttons">
+        <a nav-transition="ios" href="#/tab/dash" style="border: none; color: white; background: none;" class="button icon-right ion-compose" ></a>
+      </div>
+    </ion-header-bar>
+    <h1 style="text-align: left; font-size: 22px; font-weight: 500; color: white; margin: 0; margin-left: 15px; position: relative; top: 50%; transform: translateY(-50%);">Graphic Design</h1>
+  </div>
+  <ion-content scrollbar-y="false" scroll="false">
+    <tab-slide-box tab="0">
+    <div class="tsb-icons">
+      <div class="tsb-ic-wrp" style="margin-top: 100px">
+      <ion-scroll direction="x" class="tsb-hscroll">
+        <a href="javascript:;" class="{{tab.icon}}" ng-repeat="tab in tabs"
+        on-finish-render="test()">{{tab.text}}</a>
+      </ion-scroll>
+      </div>
+    </div>
+  <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)" >
+      <ion-slide>
+        <ion-scroll style="height:100%" delegate-handle="slide1Scroll" >
+          <div class="card">
+            <div class="item item-text-wrap">
+            This is a basic Card which contains an item that has wrapping text.
+            </div>
+          </div>
+          <div class="list card">
+            <div class="item item-avatar">
+              <img src="http://ecx.images-amazon.com/images/I/41D5vU4I1NL.jpg">
+              <h2>Pretty Hate Machine</h2>
+              <p>Nine Inch Nails</p>
+            </div>
+
+            <div class="item item-image">
+              <img src="http://ecx.images-amazon.com/images/I/41D5vU4I1NL.jpg">
+            </div>
+
+            <a class="item item-icon-left assertive" href="#">
+              <i class="icon ion-music-note"></i>
+              Start listening
+            </a>
+
+          </div>
+          <div class="card">
+            <div class="item item-text-wrap">
+            This is a basic Card which contains an item that has wrapping text.
+            </div>
+          </div>
+
+          <div class="list card">
+
+            <div class="item item-avatar">
+              <img src="http://ionicframework.com/img/docs/mcfly.jpg">
+              <h2>Marty McFly</h2>
+              <p>November 05, 1955</p>
+            </div>
+
+            <div class="item item-body">
+              <img class="full-image" src="http://ionicframework.com/img/docs/delorean.jpg">
+              <p>
+                This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+                the content is from a card-body consisting of an image and paragraph text. The footer
+                consists of tabs, icons aligned left, within the card-footer.
+              </p>
+              <p>
+                <a href="#" class="subdued">1 Like</a>
+                <a href="#" class="subdued">5 Comments</a>
+              </p>
+            </div>
+
+          </div>
+          <div class="card">
+            <div class="item item-text-wrap">
+            This is a basic Card which contains an item that has wrapping text.
+            </div>
+          </div>
+          <div class="card">
+            <div class="item item-text-wrap">
+            This is a basic Card which contains an item that has wrapping text.
+            </div>
+          </div>
+        </ion-scroll>
+      </ion-slide>
+      <ion-slide>
+          <ion-list>
+          <ion-scroll style="height:100%">
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+           <ion-item>check</ion-item>
+
+          </ion-item>
+      </ion-slide>
+      <ion-slide>
+          <h3>Mail content</h3>
+      </ion-slide>
+      <ion-slide>
+          <h3>Car content</h3>
+      </ion-slide>
+      <ion-slide>
+          <h3>Profile content</h3>
+      </ion-slide>
+      <ion-slide>
+          <h3>Favourites content</h3>
+      </ion-slide>
+      <ion-slide>
+          <h3>Chats content</h3>
+      </ion-slide>
+      <ion-slide>
+          <h3>Settings content</h3>
+      </ion-slide>
+  </ion-slide-box>
+    </tab-slide-box>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,68 @@
+/* Empty. Add your own CSS if you like */
+
+.tabs {
+  background: none;
+  border-top: 1px solid #ECEFF1!important;
+}
+
+ion-tabs.tabs-color-active-positive .tab-item {
+  color: #78909C;
+}
+
+ion-tabs.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-color-active-positive .tab-item.activated {
+  color: #26C6DA;
+}
+
+.career-list {
+  width: 3000px;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.career-list-item {
+  width: 150px;
+  height: 150px;
+  background: gray;
+  display: inline-block;
+  margin-right: 15px;
+  position: relative;
+}
+
+.career-list-item h4 {
+  position: absolute;
+  width: 80%;
+  left: 0;
+  color: white;
+  margin: 20px 15px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.career-list-item-footer h3 {
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 400;
+  color: white;
+  font-size: 22px;
+}
+
+.career-list-item-footer h5 {
+  text-align: center;
+  margin-top: 0;
+  font-weight: 300;
+  color: white;
+}
+
+.career-list-item-content {
+  position: relative;
+}
+
+.career-list-item-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+}
+
+.clear {
+  clear: both;
+}

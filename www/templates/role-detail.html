@@ -1,0 +1,19 @@
+<ion-view view-title="{{role.name}}">
+  <ion-header-bar align-title="left" style="background: {{role.color}}">
+    <div class="buttons">
+      <a nav-transition="ios" href="#/tab/dash" style="border: none; color: white; background: {{role.color}}" class="button icon-left ion-chevron-left" ></a>
+    </div>
+    <h1 class="title"> </h1>
+    <div class="buttons">
+      <a nav-transition="ios" href="#/tab/dash" style="border: none; color: white; background: {{role.color}}" class="button icon-right ion-heart" ></a>
+    </div>
+  </ion-header-bar>
+  <ion-content class="has-header">
+    <div style="height: 150px; width: 100%; background: {{role.color}}; text-align: center;">
+      <h1 style="font-size: 24px; color: white; font-weight: 400; letter-spacing: 1px; position: relative; top: 35%; transform: translateY(-50%);">{{role.name}}</h1>
+    </div>
+    <p style="margin: 20px; font-weight: 200; color: #607D8B; font-size: 14px; letter-spacing: 0.5px;">
+      {{role.description}}
+    </p>
+  </ion-content>
+</ion-view>

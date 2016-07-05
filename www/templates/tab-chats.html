@@ -1,0 +1,157 @@
+<style>
+  .swiper-container {
+      width: 500px;
+      height: 150px;
+      margin: 20px auto;
+  }
+  .swiper-container.swiper-container-explore {
+    height: 100px;
+    margin: 0 auto;
+  }
+  .swiper-container.swiper-container-explore .swiper-slide {
+    color: white;
+      text-align: center;
+      font-size: 14px;
+      background: #fff;
+      font-weight: bold;
+      margin-right: 15px;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      border-radius: 2px;
+  }
+</style>
+
+<style>
+*, *:before, *:after {box-sizing:  border-box !important;}
+
+#articles {
+  margin: 7px;
+  margin-right: 20px;
+}
+
+#articles h2 {
+  margin: 30px 7px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #455A64;
+}
+
+article {
+  -moz-column-width: 8em;
+  -webkit-column-width: 8em;
+  -moz-column-gap: 0.25em;
+  -webkit-column-gap: 0.25em;
+
+}
+
+section {
+display: inline-block;
+margin:  0.5rem;
+width:  100%;
+background:  rgba(236, 239, 241,.5);
+border-radius: 2px;
+}
+
+section p {
+  margin: 15px;
+  margin-top: 10px;
+}
+</style>
+
+<ion-view view-title="Chats">
+  <ion-content>
+    <div style="padding: 50px 20px; padding-bottom: 30px;">
+
+        <h1 style="font-weight: 200; color: #607D8B;">Explore</h1>
+    </div>
+    <div class="swiper-container swiper-container-explore" style="margin: 15px;">
+        <div ng-controller="RolesCtrl" class="swiper-wrapper">
+          <a href="#/channel" class="swiper-slide" style="text-decoration: none; margin-left: 0px; background: url('img/bg.png'); background-size: cover">Graphic Design</a>
+          <a href="#/channel" class="swiper-slide" style="text-decoration: none; margin-left: 0px; background: url('img/bg2.png'); background-size: cover">Web Design</a>
+          <a href="#/channel" class="swiper-slide" style="text-decoration: none; margin-left: 0px; background: url('img/bg3.png'); background-size: cover">Architecture</a>
+          <a href="#/channel" class="swiper-slide" style="text-decoration: none; margin-left: 0px; background: url('img/bg4.png'); background-size: cover">UX Design</a>
+          <a href="#/channel" class="swiper-slide" style="text-decoration: none; margin-left: 0px; background: url('img/bg.png'); background-size: cover">Graphic Design</a>
+          <a href="#/channel" class="swiper-slide" style="text-decoration: none; margin-left: 0px; background: url('img/bg2.png'); background-size: cover">Web Design</a>
+          <a href="#/channel" class="swiper-slide" style="text-decoration: none; margin-left: 0px; background: url('img/bg3.png'); background-size: cover">Architecture</a>
+          <a href="#/channel" class="swiper-slide" style="text-decoration: none; margin-left: 0px; background: url('img/bg4.png'); background-size: cover">UX Design</a>
+        </div>
+    </div>
+    <div id="articles">
+      <h2>Recent Updates</h2>
+      <article>
+
+        <section>
+          <img style="width: 100%" src="https://tctechcrunch2011.files.wordpress.com/2015/12/5001161361.jpg?w=1310" />
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </section>
+
+        <section>
+          <img style="width: 100%" src="https://tctechcrunch2011.files.wordpress.com/2016/06/tc-profile2.jpg?w=1316" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat  architecto quis tenetur fugiat veniam iste molestiae fuga labore!</p>
+        </section>
+
+        <section>
+          <img style="width: 100%" src="https://tctechcrunch2011.files.wordpress.com/2016/06/gold-phantom-background-rose-gold.jpg?w=1316" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus tempore at porro officia rerum est impedit ea ipsa tenetur. Labore libero hic error sunt laborum expedita.</p>
+        </section>
+
+        <section>
+          <img style="width: 100%" src="https://tctechcrunch2011.files.wordpress.com/2016/07/dr-elina-berglund-and-dr-raoul-scherwitzl.jpg?w=1316" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aliquid reprehenderit expedita odio beatae est.</p>
+        </section>
+
+        <section>
+          <img style="width: 100%" src="https://tctechcrunch2011.files.wordpress.com/2016/07/gettyimages-537477064.jpg?w=1316" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem ut debitis dolorum earum expedita eveniet voluptatem quibusdam facere eos numquam commodi ad iusto laboriosam rerum aliquam.</p>
+        </section>
+
+        <section>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </section>
+
+        <section>
+          <img style="width: 100%" src="https://tctechcrunch2011.files.wordpress.com/2014/10/fintech-3.jpg?w=1316" />
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </section>
+
+        <section>
+          <img style="width: 100%" src="https://tctechcrunch2011.files.wordpress.com/2016/06/screen-shot-2016-06-30-at-4-58-21-pm.png?w=1316" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quaerat suscipit ad.</p>
+        </section>
+
+        <section>
+          <img style="width: 100%" src="https://tctechcrunch2011.files.wordpress.com/2016/06/378330.jpeg?w=1316" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nihil alias amet dolores fuga totam sequi a cupiditate ipsa voluptas id facilis nobis.</p>
+        </section>
+
+      </article>
+    </div>
+    <!--
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+        <img ng-src="{{chat.face}}">
+        <h2>{{chat.name}}</h2>
+        <p>{{chat.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+    -->
+  </ion-content>
+</ion-view>
